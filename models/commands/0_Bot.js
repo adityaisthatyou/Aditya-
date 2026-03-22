@@ -30,7 +30,10 @@ module.exports.handleEvent = async function({ api, event, args, Threads, Users }
    if ((event.body.toLowerCase() == "funny") || (event.body.toLowerCase() == "songs")) {
        return api.sendMessage("hai tamnna hamey tujhe Kam wali bay banaya🤣🤣", threadID);
      };
-    if ((event.body.toLowerCase() == "🥰") || (event.body.toLowerCase() == "😱")) {
+     if ((event.body.toLowerCase() == "😏") || (event.body.toLowerCase() == "🙄🙄")) {
+       return api.sendMessage("Gndi shkal Wala lmby balon Wala koja admi shkl gum kro apni😒", threadID);
+     };
+     if ((event.body.toLowerCase() == "🥰") || (event.body.toLowerCase() == "😱")) {
        return api.sendMessage("is nazar se serf  𝐍𝐀𝐈𝐑𝐀  dekh sak thi hai Mujhe💞", threadID);
      };
     if ((event.body.toLowerCase() == "i hate you") || (event.body.toLowerCase() == "hate you")) {
