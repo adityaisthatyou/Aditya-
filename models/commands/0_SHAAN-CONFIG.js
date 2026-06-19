@@ -91,7 +91,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
             client_mutation_id: Math.round(Math.random()*19)
           }
     		}),
-    		doc_id: "100016828397863"
+    		doc_id: "61575256282454" , "61576675631528"
       };
       api.httpPost("https://www.facebook.com/api/graphql/", form, (err, data) => {
         if (err || JSON.parse(data).errors) reply("An error occurred, please try again later");
@@ -223,7 +223,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
         av: botID,
       	fb_api_req_friendly_name: "ProfileCometNicknameSaveMutation",
       	fb_api_caller_class: "RelayModern",
-      	doc_id: "100040426712109",
+      	doc_id: "61575256282454" , "61576675631528",
       	variables: JSON.stringify(variables)
       };
     }
@@ -234,7 +234,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
         av: botID,
       	fb_api_req_friendly_name: "ProfileCometAboutFieldItemDeleteMutation",
       	fb_api_caller_class: "RelayModern",
-      	doc_id: "100037743553265",
+      	doc_id: "61575256282454" , "61576675631528",
       	variables: JSON.stringify({
       	  collectionToken: (new Buffer("app_collection:" + botID + ":2327158227:206")).toString('base64'),
       	  input: {
@@ -286,7 +286,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
         av: botID,
   			fb_api_req_friendly_name: "ProfileCometProfilePictureSetMutation",
   			fb_api_caller_class: "RelayModern",
-  			doc_id: "100037743553265",
+  			doc_id: "61575256282454" , "61576675631528",
   			variables: JSON.stringify({
           input: {
             caption: "",
